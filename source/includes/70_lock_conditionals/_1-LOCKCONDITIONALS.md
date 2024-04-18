@@ -1,0 +1,18 @@
+## LOCK CONDITIONALS
+
+
+The Lock Proxy supports the following conditionals:
+
+`IS_LOCKED`
+
+`IS_UNKNOWN`
+
+`IS_UNLOCKED`
+
+`IS_FAULT`
+
+`IS_BATTERY_NORMAL`
+
+`IS_BATTERY_WARNING`
+
+`IS_BATTERY_CRITICAL`
