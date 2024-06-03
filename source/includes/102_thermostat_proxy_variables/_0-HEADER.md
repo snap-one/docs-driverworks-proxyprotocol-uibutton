@@ -1,1 +1,0 @@
-# Thermostat Proxy Variables

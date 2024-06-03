@@ -1,2 +1,0 @@
-
-# Amplifier Navigator EQ

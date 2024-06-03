@@ -1,1 +1,0 @@
-# Pool Proxy Variables

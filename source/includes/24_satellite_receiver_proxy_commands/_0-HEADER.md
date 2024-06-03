@@ -1,1 +1,0 @@
-# Satellite Receiver Proxy Commands
