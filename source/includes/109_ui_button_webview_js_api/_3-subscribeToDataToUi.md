@@ -8,20 +8,20 @@ Subscribes to the DATA\_TO\_UIs for either the protocol or proxy. All responses 
 
 `C4.subscribeToDataToUi(sendToProtocol: boolean = false):void`
 
-| Parameter | Description |
-| --- | --- |
-| boolean | _sendToProtocol_ - Whether the command should be sent to the protocol (`true`) or proxy (`false`). |
+| Parameter | Description                                                                                        |
+| --------- | -------------------------------------------------------------------------------------------------- |
+| boolean   | _sendToProtocol_ - Whether the command should be sent to the protocol (`true`) or proxy (`false`). |
 
 
-| Returns | Description |
-| --- | --- |
-| _void_ | All responses will be sent back via the Javascript callback: `onDataToUi(response: string)` |
+| Returns | Description                                                                                 |
+| ------- | ------------------------------------------------------------------------------------------- |
+| _void_  | All responses will be sent back via the Javascript callback: `onDataToUi(response: string)` |
 
 
-| Callbacks | Description |
-| --- | --- |
-| `onDataToUi(response: string)` | Receives DATA\_TO\_UIs when subscribed. DATA\_TO\_UIs are converted to json by Broker before being sent to the web page. |
-| `onSubscribeToDataToUiError(message: string)` | Receives error messages when attempting to subscribe to DATA\_TO\_UIs. |
+| Callbacks                                     | Description                                                                                                              |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `onDataToUi(response: string)`                | Receives DATA\_TO\_UIs when subscribed. DATA\_TO\_UIs are converted to json by Broker before being sent to the web page. |
+| `onSubscribeToDataToUiError(message: string)` | Receives error messages when attempting to subscribe to DATA\_TO\_UIs.                                                   |
 
 
 ### Example
