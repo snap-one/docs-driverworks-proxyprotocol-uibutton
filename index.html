@@ -446,6 +446,9 @@
                   <li>
                     <a href="#ui-button-proxy-webview-javascript-api-c4-subscribetovariable" class="toc-h2 toc-link" data-title="C4.subscribeToVariable">C4.subscribeToVariable</a>
                   </li>
+                  <li>
+                    <a href="#ui-button-proxy-webview-javascript-api-c4-getroomid" class="toc-h2 toc-link" data-title="C4. getRoomID">C4. getRoomID</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -1082,6 +1085,54 @@ events by calling <code>C4:SendDataToUI(xml)</code> or <code>C4:SendDataToUI (st
 <p>Subscribes to the proxy&#39;s &quot;LAST_MENU_SELECTED&quot; variable.</p>
 
 <p><code>C4.subscribeToVariable(&quot;LAST_MENU_SELECTED&quot;, false);</code></p>
+
+<h2 id='ui-button-proxy-webview-javascript-api-c4-getroomid'>C4. getRoomID</h2>
+
+<p>Obtains the Room ID for where the WebView is presented. All responses are sent back via the Javascript callback <code>onSetRoomID(roomID:Int)</code>. Driver writers will need to implement this callback in their web page to receive the room ID. </p>
+
+<h3 id='ui-button-proxy-webview-javascript-api-c4-getroomid-signature'>Signature</h3>
+
+<p><code>C4.getRoomID </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>void</em></td>
+<td>All responses will be sent back via the Javascript callback: <code>onSetRoomID(roomId)</code></td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Callbacks</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>onSetRoomID(roomID:Int) </code></td>
+<td>callback to receive roomID</td>
+</tr>
+</tbody></table>
+
+<h3 id='ui-button-proxy-webview-javascript-api-c4-getroomid-example'>Example</h3>
+
+<p><code>C4.getRoomID()</code></p>
 <h1 id='ui-button-proxy-javascript-logging'>UI Button Proxy JavaScript Logging</h1>
 
 <h2 id='ui-button-proxy-javascript-logging-managing-js-logging-using-console-log'>Managing JS Logging using console.log</h2>
